@@ -1,0 +1,18 @@
+public void printProgress(){
+        for (String s : Score.history){
+            System.out.println(s);
+        }
+        for (ArrayList<Integer> irow : Score.scorehist){
+            for (int i : irow){
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+        if (Score.p1wins > Score.p2wins){
+            System.out.println("Player 1 had the most wins :)");
+        } else if (Score.p2wins > Score.p1wins){
+            System.out.println("Player 2 had the most wins :)");
+        } else {
+            System.out.println("Player 1 and Player 2 won an equal number of times :)");
+        }
+    }
